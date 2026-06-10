@@ -5,10 +5,8 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <h6>おはよう</h6>
       <p>รักครูนะ :3</p>
-      <Footer />
     </div>
   );
 }
