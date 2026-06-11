@@ -1,7 +1,12 @@
-export default function ForgetPassword() {
+"use client";
+export default function About() {
   return (
-    <div>
-      <h2>คุณลืมรหัสผ่านหรอเนี้ย</h2>
+    <div className="auth-page">
+      <form className="auth-card">
+        <h2>ลืมรหัสผ่าน</h2>
+        <input placeholder="Email" type="email"/>     
+        <button>Find</button>
+      </form>
     </div>
   );
 }
