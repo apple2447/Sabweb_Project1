@@ -1,13 +1,21 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="navbar">    
-        <ul className="nav-links">
-            <li>
-                Sabweb Project
-            </li>
-            <li/>
+    <nav className="navbar">
+        <div className="nav-container">
+
+            <Link href="/" className="logo">
+                    TumSab Project
+            </Link>
+
+            <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+                    ☰
+            </button>
+        <ul className={menuOpen ? "nav-links active" : "nav-links"}>
             <li>
                 <Link href="/">Home</Link>
             </li>
@@ -24,8 +32,8 @@ export default function Navbar() {
             <li>
                 <Link href="/register">Register</Link>
             </li> 
-            
-        </ul>
+            </ul>
+        </div>
     </nav>
   );
 }
