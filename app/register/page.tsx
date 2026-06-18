@@ -24,7 +24,7 @@ export default function Register() {
     if (res.ok) {
       router.push("/login");
     } else {
-      alert("Register failed");
+      alert("Register ผิดพลาด");
     }
   }
 
