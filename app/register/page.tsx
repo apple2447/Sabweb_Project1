@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -22,6 +21,7 @@ export default function Register() {
     });
 
     if (res.ok) {
+      alert("Register สำเร็จแล้ว");
       router.push("/login");
     } else {
       alert("Register ผิดพลาด");
@@ -32,7 +32,7 @@ export default function Register() {
   return (
 
     <div className="auth-page">
-      <form className="auth-card"  onSubmit={handleSubmit}>
+      <form className="auth-card" onSubmit={handleSubmit}>
         <h2> สมัครสมาชิก </h2>
         <input
           placeholder="Name"

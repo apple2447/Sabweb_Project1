@@ -1,16 +1,59 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-export default function About() {
+export default function Login() {
+
+  const router = useRouter();
+
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  });
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    const res = await fetch("/api/auth/login", {
+      method: "POST",
+      body: JSON.stringify(form),
+    });
+
+    if (res.ok) {
+      router.push("/dashboard");
+      router.refresh();
+    } else {
+      alert("Login มีการผิดพลาด");
+    }
+  }
+
+
+
   return (
     <div className="auth-page">
-      <form className="auth-card">
-        <h2>เข้าสู่ระบบ</h2>
-        <input placeholder="Email" type="email"/>  
-        <input placeholder="Password" type="password"/>  
-        <Link href="/forget-password" className="hover:text-red-300 text-red-400">Forget Password</Link>
+      <form className="auth-card" onSubmit={handleSubmit}>
+        <h2 className="font-bold"> เข้าสู่ระบบ</h2>
+        <input
+          placeholder="Email"
+          type="email"
+          onChange={(e) => setForm({ ...form, email: e.target.value })}
+        />
+        <input
+          placeholder="Password"
+          type="password"
+          onChange={(e) => setForm({ ...form, password: e.target.value })}
+        />
+        
+        <p>
+          <Link href="/forgot-password">Forgot Password?</Link>
+        </p>
+
+        <p>
+          No account? <Link href="/register">Register</Link>
+        </p>
         <button>Login</button>
       </form>
     </div>
   );
 }
-
