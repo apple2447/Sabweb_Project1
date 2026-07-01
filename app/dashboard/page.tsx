@@ -11,7 +11,7 @@ export default async function Dashboard() {
   return (
     <div >
 
-      <h2> Dashbosrd </h2>
+      <h2> Dashboard </h2>
       <p>Welcome: {user.name as string}</p>
       <p>Role: {user.role as string}</p>
     </div>
