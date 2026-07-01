@@ -22,7 +22,7 @@ body {
 }
 
 .navbar {
-  background: #003300;
+  background: #0040a09d;
   color: white;
   padding: 14px 24px;
 }
@@ -57,10 +57,10 @@ body {
 }
 
 .nav-links a:hover {
-  color: #d8ff2d;
+  color: #00ccff;
   font-weight: bold;
   font-size: 16px;
-  background: #66cc00;
+  background: #0041cc;
   padding: 7px 2px;
   border-radius: 8px;
 }
@@ -123,8 +123,8 @@ body {
 .auth-card button {
   width: 100%;
   padding: 12px;
-  background: #2563eb;
-  color: white;
+  background: #24c2ba;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -142,7 +142,7 @@ body {
 }
 
 .footer {
-  background: #003300;
+  background: #0040a09d;
   color: white;
   text-align: left;
   padding: 18px;
@@ -150,7 +150,7 @@ body {
 
 .footer-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
