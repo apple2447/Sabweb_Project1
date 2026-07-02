@@ -15,6 +15,7 @@ export default async function Profile() {
       <p>user: {user.name as string}</p>
       <p>Role: {user.role as string}</p>
       <p>Email: {user.email as string}</p>
+      <p>Phone: {user.phone as string}</p>
     </div>
   )
 }
