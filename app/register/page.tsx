@@ -38,16 +38,19 @@ export default function Register() {
           placeholder="Name"
           type="text"
           onChange={(e) => setForm({ ...form, name: e.target.value })}
+          required
         />
         <input
           placeholder="Email"
           type="email"
           onChange={(e) => setForm({ ...form, email: e.target.value })}
+          required
         />
         <input
           placeholder="Password"
           type="password"
           onChange={(e) => setForm({ ...form, password: e.target.value })}
+          required
         />
         <button>Register</button>
       </form>

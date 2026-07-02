@@ -19,6 +19,7 @@ export default function ForgotPassword() {
           type="email"
           placeholder="Enter your email"
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
 
         <button>ส่งข้อความเพื่อ Reset รหัสผ่าน</button>

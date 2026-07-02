@@ -1,12 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 export default function Login() {
-
-  const router = useRouter();
-
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -21,14 +17,12 @@ export default function Login() {
     });
 
     if (res.ok) {
-      router.push("/dashboard");
-      router.refresh();
+      // อันนี้ที่แก้โค้ด มันรีหน้าให้ ตอนเข้า dashboard
+      window.location.href = "/dashboard";
     } else {
       alert("Login มีการผิดพลาด");
     }
   }
-
-
 
   return (
     <div className="auth-page">
@@ -38,11 +32,13 @@ export default function Login() {
           placeholder="Email"
           type="email"
           onChange={(e) => setForm({ ...form, email: e.target.value })}
+          required
         />
         <input
           placeholder="Password"
           type="password"
           onChange={(e) => setForm({ ...form, password: e.target.value })}
+          required
         />
         
         <p>
