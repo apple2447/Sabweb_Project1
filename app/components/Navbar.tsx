@@ -42,7 +42,7 @@ export default function Navbar() {
             <div className="nav-container">
 
                 <Link href="/" className="logo">
-                    Sebweb Project
+                    Korapat Project
                 </Link>
 
                 <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -51,35 +51,35 @@ export default function Navbar() {
 
                 <ul className={menuOpen ? "nav-links active" : "nav-links"}>
                     <li>
-                        <Link href="/" >Home</Link>
+                        <Link href="/" >หน้าเริ่มต้น</Link>
                     </li>
 
                     <li>
-                        <Link href="/about">About</Link>
+                        <Link href="/about">เกี่ยวกับ</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/contact">ติดต่อ</Link>
                     </li>
 
                     {user && (
                         <li>
-                            <Link href="/dashboard">Dashboard</Link>
+                            <Link href="/dashboard">แดชบอร์ด</Link>
                         </li>
                     )}
 
                     {user?.role === "admin" && (
                         <li>
-                            <Link href="/admin/users">Admin</Link>
+                            <Link href="/admin/users">แอดมิน</Link>
                         </li>
                     )}
 
                     {!user ? (
                         <>
                             <li>
-                                <Link href="/login">Login</Link>
+                                <Link href="/login">เข้าสู่ระบบ</Link>
                             </li>
                             <li>
-                                <Link href="/register"> Register </Link>
+                                <Link href="/register">สมัครสมาชิก</Link>
                             </li>
                         </>
                     ) : (
@@ -89,7 +89,7 @@ export default function Navbar() {
                             </li>
                             <li>
                                 <button onClick={logout} className="btn-logout">
-                                    Logout
+                                    ออกจากระบบ
                                 </button>
                             </li>
                         </>

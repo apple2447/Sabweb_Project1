@@ -1,12 +1,18 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
-export default function Home() {
+export default function Register() {
+
+
   return (
-    <div>
-      <h6>おはよう</h6>
-      <p>รักครูนะ :3</p>
+
+    <div className="auth-page">
+      <form className="auth-card">  
+        <p>Just a ทบทวน</p>
+        <p>ก็ไม่เข้าใจเหมือนเดิม</p>
+      </form>
     </div>
   );
 }

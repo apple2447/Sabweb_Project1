@@ -1,12 +1,18 @@
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-export default function Contact() {
+export default function Register() {
+
+
   return (
-    <div>
-      <h6>ติดต่อเรา</h6>
-      <p>ที่โรงเรียนจิตรลดาวิชาชีพ สถาบันเทคโนโลยีจิตรลดา</p>
-      <li/>
-      <Link href="https://github.com/apple2447/Sabweb_Project1" className="hover:text-blue-800 text-blue-700">Github Sabweb Project กดเพื่อไป</Link>
+
+    <div className="auth-page">
+      <form className="auth-card">  
+        <p>ติดต่อได้ที่</p>
+        <p>สักที่นึง</p>
+      </form>
     </div>
   );
 }

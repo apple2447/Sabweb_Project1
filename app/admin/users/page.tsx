@@ -16,7 +16,7 @@ export default async function Dashboard() {
 
       <h2> Admin </h2>
       <p>Welcome: {user.name as string} to Admin panel</p>
-      <p>{user.school as string}</p>
+      <p>มันคือแอดมิน</p>
     </div>
   )
 }
