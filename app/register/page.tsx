@@ -57,6 +57,7 @@ export default function Register() {
           type="password"
           onChange={(e) => setForm({ ...form, password: e.target.value })}
           required
+          minLength={8}
         />
         <button>Register</button>
       </form>
