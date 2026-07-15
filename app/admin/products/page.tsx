@@ -1,9 +1,8 @@
 import ProductForm from "@/components/ProductFrom";
-
-export default function ProductPage() {
+export default function CategoryPage() {
     return (
         <div>
-            <ProductForm />
+        <ProductForm/>
         </div>
     );
 }

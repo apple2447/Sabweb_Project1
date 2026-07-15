@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Register() {
 
@@ -48,7 +49,7 @@ export default function Register() {
           required
         />
         <input
-          placeholder="phone"
+          placeholder="phone (ไม่บังคับ)"
           type="text"
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
         />
@@ -59,6 +60,9 @@ export default function Register() {
           required
           minLength={8}
         />
+        <p>
+          มีบัญชีแล้ว? <Link href="/login">เข้าสู่ระบบ</Link>
+        </p>
         <button>Register</button>
       </form>
     </div>
