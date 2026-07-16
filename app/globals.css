@@ -165,7 +165,7 @@ body {
     right: 20px;
     flex-direction: column;
     align-items: flex-start;
-    background: #00330d;
+    background: #003300;
     padding: 18px;
     width: 230px;
     border-radius: 12px;
@@ -178,4 +178,51 @@ body {
   .auth-card {
     width: 90%;
   }
+}
+
+.page {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 360px;
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  background: #7fa3f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.card textarea{
+  width: 100%;
 }
