@@ -27,6 +27,8 @@ This Project by Next.js but all of It by Sabweb_Project and Thanks for helping b
 
 if you want to see my website [Click here](https://sabweb-project1.vercel.app/) << update when I push to Github
 
+If you want to see old ver Just Click Releases..
+
 If You don't know Thai language Sorry. It make for Instruction provided solely by teachers only not make for everyone to use my website
 
 !!If You see my github do not Use for yourself Use for to see what code can do something? or Learning only!!
