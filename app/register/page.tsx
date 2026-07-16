@@ -58,7 +58,7 @@ export default function Register() {
           type="password"
           onChange={(e) => setForm({ ...form, password: e.target.value })}
           required
-          minLength={8}
+          minLength={6}
         />
         <p>
           มีบัญชีแล้ว? <Link href="/login">เข้าสู่ระบบ</Link>
