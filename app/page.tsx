@@ -1,12 +1,34 @@
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Home() {
+
+
   return (
-    <div>
-      <h6>สวัสดีเด้ออ้าย</h6>
-      <p>อัปเดตข้อความวันที่ 7/8/2026</p>
+
+    <div className="auth-page">
+      <form className="auth-card">  
+        <p>Update Note📝</p>
+        <p>------------อัปเดตเมื่อวันที่ 5/8/2569-------------</p>
+        <p>--------------------------------------------------------</p>
+        <p>Update :</p>
+        <p>ตั้งค่าเว็ปไซต์ เชื่อม Database ได้</p>
+        <p>--------------------------------------------------------</p>
+        <>ลิงค์/เว็ปไซต์เพิ่มเติม</>
+        <p>
+          Github(Sabweb_Project) <Link href="https://github.com/apple2447/Sabweb_Project1">Link here</Link>
+        </p>
+        <p>
+          Github(My Profile) <Link href="https://github.com/apple2447">Github</Link>
+        </p>
+        <p>
+          Website(Sabweb_Project) <Link href="https://sabweb-project1.vercel.app/">Link here</Link>
+        </p>
+        <p>or <Link href="https://google.com">google.com</Link></p>
+        <p>--------------------------------------------------------</p>
+      </form>
     </div>
   );
 }
