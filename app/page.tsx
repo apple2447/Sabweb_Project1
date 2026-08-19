@@ -11,12 +11,13 @@ export default function Home() {
     <div className="auth-page">
       <form className="auth-card">  
         <p>Update Note📝</p>
-        <p>----------อัปเดตเมื่อวันที่ 13/8/2569-----------</p>
+        <p>----------อัปเดตเมื่อวันที่ 19/8/2569-----------</p>
         <p>----------------------------------------------------</p>
         <p>Update : Database Pic</p>
         <p>Versions Sabweb_Project : v.11</p>
         <p>----------------------------------------------------</p>
         <p>เพิ่ม Database.. <Link href="https://cloudinary.com/">cloudinary</Link></p>
+        <p>เพิ่ม Blog</p>
         <p>เพิ่มเติมอื่นๆ..</p>
         <p>ปรับปรุงเพิ่มเติม..</p>
         <p>---------------------------------------------------</p>
