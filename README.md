@@ -1,44 +1,33 @@
 This is a [Next.js](https://nextjs.org) Project. Doing project by [`Sabweb_Project1`](https://github.com/apple2447/Sabweb_Project1).
+This Project is Thai verstion not a English version sorry about it 
+(โปรเจคนี้เป็นเวอร์ชั่นภาษาไทยไม่ใช่ภาษาอังกฤษต้องขออภัยด้วย)
+Project make for Instruction provided solely by teachers only. Not make for everyone to use my website!!
+โปรเจคนี้ทำสำหรับการเรียนการสอนพร้อมครูอย่างเดียว ไม่ได้สร้างสำหรับให้ทุกคนใช้!!
 
-## Getting Runing/Update
+## เริ่มต้นการ Run เว็ปแบบ Offline
 
-First, run the development server:
+โค้ดสำหรับการ Run เว็ปไซต์:
 ```bash
-# command Prompt
+# command Prompt (Windows)
 npm run dev
-# I just know Windows only sorry
 ```
 
-Open [localhost:3000](http://localhost:3000) with your browser to see the result.
+และพิมพ์ URL [localhost:3000](http://localhost:3000) ในเบราว์เซอร์ของคุณจะเห็นผลลัพธ์.
 
-If you want to stop:
+ถ้าคุณอยากปิดระบบ:
 ```bash
 Use ctrl + C 2 Time 
 or
 Use ctrl + C and type Y and Enter
 ```
-How to use when You have my file
+ถ้าคุณใช้เว็ปไซต์ผมแล้ว Error ให้ทำการ
 ```bash
 npm install .
-# Just this code and have fun my code of web
+# ความจริงไม่ได้อนุญาติให้ใช้นะว่าไป
 ```
 
-This Project by Next.js but all of It by Sabweb_Project and Thanks for helping by eleclabs to do for me :3
+This Project by Next.js but all of It by Sabweb_Project and Thanks for helping by [eleclabs](https://github.com/eleclabs) to do for me :3
 
 if you want to see my website [Click here](https://sabweb-project1.vercel.app/) << update when I push to Github
 
-If you want to see old ver Just Click Releases..
-
-If You don't know Thai language Sorry. It make for Instruction provided solely by teachers only not make for everyone to use my website
-
-!!If You see my github do not Use for yourself Use for to see what code can do something? or Learning only!!
-
-??But If you want to use my web for yourself. Just fix some code and you can do anything now but don't forget to learn okey??
-
-โค้ดทั้งหมดนี้สำหรับการเรียนการสอนที่ทำตามจากครูเท่านั้น ไม่ได้เจตนาเปิดให้ทุกคนใช้อยู่แล้ว
-
-!!ถ้าคุณเห็น github ของผม ห้ามเอาไปใช้เป็นของตัวเอง โค้ดเอาไปใช้สำหรับการการดูว่าโค้ดทำยังไงเท่านั้น!!
-
-??แต่ถ้าคุณอยากเอาไปใช้เป็นของตัวเอง รบกวนปรับปรุงโค้ดหน่อยนะ และก็สามารถจะเอาไปทำอะไรก็ได้เลย แต่อย่าลืมรู้วิธีการทำด้วยนะ??
-
-Thanks you :3
+If you want to see old ver Just [Click Releases](https://github.com/apple2447/Sabweb_Project1/releases)..
