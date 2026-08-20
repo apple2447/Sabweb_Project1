@@ -4,7 +4,7 @@ export default function Footer() {
     <footer className="footer">      
         <div className="footer-container">
 
-          <p>&copy; 2026 โดยกรภัทร์ กลิ่นทิพย์ขจร. All rights reserved.</p>
+          <p>&copy; 2026 Thailand Sabweb Project. All rights reserved.</p>
 
         </div>
     </footer>

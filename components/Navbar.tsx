@@ -62,13 +62,19 @@ export default function Navbar() {
                     </li>
 
                     {user && (
+                        <>
                         <li>
                             <Link href="/dashboard">Dashboard</Link>
                         </li>
+                        <li>
+                            <Link href="/blogs">ข่าวสารอัปเดต</Link>
+                        </li>
+                        </>
                     )}
 
                     {user?.role === "admin" && (
                         <>
+                        <li>|</li>
                         <li>
                             <Link href="/admin/blogs">Blogs</Link>
                         </li>
@@ -78,6 +84,7 @@ export default function Navbar() {
                         <li>
                             <Link href="/admin/products">Products</Link>
                         </li>
+                        <li>|</li>
                         </>
                     )}
 

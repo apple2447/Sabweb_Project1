@@ -1,7 +1,7 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 
 export default function Register() {
 
@@ -17,16 +17,17 @@ export default function Register() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
+
     const res = await fetch("/api/auth/register", {
       method: "POST",
       body: JSON.stringify(form),
     });
 
     if (res.ok) {
-      alert("Register สำเร็จแล้ว");
+      alert("Register successful");
       router.push("/login");
     } else {
-      alert("Register ผิดพลาด");
+      alert("Register failed");
     }
   }
 
@@ -49,7 +50,7 @@ export default function Register() {
           required
         />
         <input
-          placeholder="phone (ไม่บังคับ)"
+          placeholder="เบอร์โทร"
           type="text"
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
         />
@@ -63,6 +64,7 @@ export default function Register() {
         <p>
           มีบัญชีแล้ว? <Link href="/login">เข้าสู่ระบบ</Link>
         </p>
+
         <button>Register</button>
       </form>
     </div>

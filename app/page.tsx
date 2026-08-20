@@ -10,18 +10,18 @@ export default function Home() {
 
     <div className="auth-page">
       <form className="auth-card">  
-        <p>Update Note📝</p>
-        <p>----------อัปเดตเมื่อวันที่ 19/8/2569-----------</p>
-        <p>----------------------------------------------------</p>
-        <p>Update : Database Pic</p>
-        <p>Versions Sabweb_Project : v.11</p>
-        <p>----------------------------------------------------</p>
-        <p>เพิ่ม Database.. <Link href="https://cloudinary.com/">cloudinary</Link></p>
-        <p>เพิ่ม Blog</p>
-        <p>เพิ่มเติมอื่นๆ..</p>
-        <p>ปรับปรุงเพิ่มเติม..</p>
-        <p>---------------------------------------------------</p>
-        <>ลิงค์/เว็ปไซต์เพิ่มเติม</>
+        <h1>Update Note📝</h1>
+        <h1>อัปเดตเมื่อวันที่ 20/8/2569</h1>
+        <h1>----------------------------------------------------</h1>
+        <p>Update : Fix Text and all</p>
+        <p>Version : 12</p>
+        <h1>----------------------------------------------------</h1>
+        <p>:: ปรับปรุง Readme</p>
+        <p>:: ปรับ Font เพิ่มเติม</p>
+        <p>:: ปรับปรุง Readme</p>
+        <p>:: และอื่นๆ ที่จำไม่ได้เหมือนกัน</p>
+        <h1>---------------------------------------------------</h1>
+        <h1>ลิงค์/เว็ปไซต์เพิ่มเติม</h1>
         <p>
           Github(Sabweb_Project) <Link href="https://github.com/apple2447/Sabweb_Project1">Link here</Link>
         </p>
@@ -32,7 +32,7 @@ export default function Home() {
           Website(Sabweb_Project) <Link href="https://sabweb-project1.vercel.app/">Link here</Link>
         </p>
         <p>or <Link href="https://google.com">google.com</Link></p>
-        <p>----------------------------------------------------</p>
+        <h1>----------------------------------------------------</h1>
       </form>
     </div>
   );
