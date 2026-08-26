@@ -10,7 +10,7 @@ export default function Home() {
 
     <div className="auth-page">
       <form className="auth-card">  
-        <h1>Update Note📝</h1>
+        <h1>Update Noter📝</h1>
         <h1>อัปเดตเมื่อวันที่ 20/8/2569</h1>
         <h1>----------------------------------------------------</h1>
         <p>Update : Fix Text and all</p>
