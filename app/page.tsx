@@ -7,7 +7,7 @@ export default function Home() {
     
       <h2> Welcome to website </h2>
       <p> โดย Sabweb Project </p>
-      <p>Update versions : v.13</p>
+      <p>Update versions : v.14</p>
       <BlogCards/>
  
     </div>
