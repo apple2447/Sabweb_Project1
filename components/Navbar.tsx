@@ -60,31 +60,34 @@ export default function Navbar() {
                     <li>
                         <Link href="/contact">Contact</Link>
                     </li>
+                    <li>
+                        <Link href="/products">สินค้า</Link>
+                    </li>
+                    <li>
+                            <Link href="/blogs">ข่าวสารอัปเดต</Link>
+                    </li>
 
                     {user && (
                         <>
                         <li>
                             <Link href="/dashboard">Dashboard</Link>
                         </li>
-                        <li>
-                            <Link href="/blogs">ข่าวสารอัปเดต</Link>
-                        </li>
+                        
                         </>
                     )}
 
                     {user?.role === "admin" && (
                         <>
-                        <li>|</li>
                         <li>
-                            <Link href="/admin/blogs">Blogs</Link>
+                            <Link href="/admin/blogs">เพิ่มบทความ</Link>
                         </li>
                         <li>
-                            <Link href="/admin/categories">Categories</Link>
+                            <Link href="/admin/categories">เพิ่มหมวดหมู่</Link>
                         </li>
                         <li>
-                            <Link href="/admin/products">Products</Link>
+                            <Link href="/admin/products">เพิ่มสินค้า</Link>
                         </li>
-                        <li>|</li>
+                        
                         </>
                     )}
 

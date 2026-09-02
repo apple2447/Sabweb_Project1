@@ -1,5 +1,6 @@
-import BlogCards from "@/components/BlogCards";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -7,9 +8,7 @@ export default function Home() {
     
       <h2> Welcome to website </h2>
       <p> โดย Sabweb Project </p>
-      <p>Update versions : v.14</p>
-      <BlogCards/>
- 
+      <p>Update versions : v.15</p>
     </div>
   );
 }
